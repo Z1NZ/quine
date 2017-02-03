@@ -5,8 +5,8 @@ NAME = Colleen
 CFLAGS = -Wall -Wextra -Werror
 
 #	Sources
-RT_SOURCES = $(shell find lib | grep "\.c$$" | sed "s/\.c$$//g")
-SRCS = $(addsuffix .c, $(RT_SOURCES))
+SOURCES = $(shell find lib | grep "\.c$$" | sed "s/\.c$$//g")
+SRCS = $(addsuffix .c, $(SOURCES))
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
