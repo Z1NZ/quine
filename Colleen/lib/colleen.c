@@ -1,2 +1,4 @@
 #include<stdio.h>
-int main(){char*a="#include<stdio.h>%cint main(){char*a=%c%s%c;printf(a,10,34,a,34);}";printf(a,10,34,a,34);}
+//tototest
+int toto(){return(1);}
+int main(){/*testtoto*/char*a="#include<stdio.h>%c//tototest%cint toto(){return(1);}%cint main(){/*testtoto*/char*a=%c%s%c;printf(a,10,10,10,34,a,34);}";printf(a,10,10,10,34,a,34);}
