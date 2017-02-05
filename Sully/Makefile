@@ -29,6 +29,9 @@ fclean: clean
 	@echo "RM\tprojet ($(NAME))"
 	@$(RM) $(NAME)
 
+rm:
+	rm -fr *.c
+
 re: fclean all
 
 git:
