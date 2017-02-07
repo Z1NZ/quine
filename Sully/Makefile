@@ -5,9 +5,8 @@ NAME = Sully
 CFLAGS = -Wall -Wextra -Werror
 
 #	Sources
-SOURCES = $(shell find lib | grep "\.c$$" | sed "s/\.c$$//g")
-SRCS = $(addsuffix .c, $(SOURCES))
-OBJS = $(SRCS:.c=.o)
+SOURCES = ./Sully.c
+OBJS = $(SOURCES:.c=.o)
 
 all: $(NAME)
 
@@ -28,9 +27,6 @@ clean:
 fclean: clean
 	@echo "RM\tprojet ($(NAME))"
 	@$(RM) $(NAME)
-
-rm:
-	rm -fr *.c
 
 re: fclean all
 
