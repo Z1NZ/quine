@@ -35,3 +35,8 @@ git:
 	@echo "Enter Your Commit :"
 	@read var1 ; git commit -m "$$var1"
 	@git push
+
+Sully_test:
+	make ; mkdir -p tmp ; cp Sully tmp/;cd tmp; ./Sully; ls -al | grep Sully | wc -l
+	make fclean
+	#rm -fr tmp
